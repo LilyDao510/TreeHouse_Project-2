@@ -1,0 +1,21 @@
+# --- IntelliJ IDEA ---
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# --- Compiled class files ---
+*.class
+
+# --- Build output ---
+target/
+build/
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Files created at runtime ---
+*.ser
+*.log

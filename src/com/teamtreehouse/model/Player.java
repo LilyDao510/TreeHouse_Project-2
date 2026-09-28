@@ -6,7 +6,6 @@ import java.io.Serializable;
 public class Player implements Comparable<Player>, Serializable {
   private static final long serialVersionUID = 1L;
 
-  // Field names and constructor order must stay as is: Players.load() uses them
   private final String firstName;
   private final String lastName;
   private final int heightInInches;
@@ -27,7 +26,6 @@ public class Player implements Comparable<Player>, Serializable {
     return lastName;
   }
 
-  // Example: "Joe Smith"
   public String getFullName() {
     return firstName + " " + lastName;
   }
@@ -72,8 +70,6 @@ public class Player implements Comparable<Player>, Serializable {
             && firstName.equals(other.firstName)
             && lastName.equals(other.lastName);
   }
-
-  // Must match equals(): equal players give the same hash
   @Override
   public int hashCode() {
     int result = firstName.hashCode();

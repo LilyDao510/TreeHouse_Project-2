@@ -1,7 +1,6 @@
 import com.teamtreehouse.model.Player;
 import com.teamtreehouse.model.Players;
 import com.teamtreehouse.model.Team;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -299,7 +298,6 @@ public class LeagueManager {
   }
 
   // Counts experienced / inexperienced players for each team
-  // Result: team -> {"Experienced" -> count, "Inexperienced" -> count}
   private Map<Team, Map<String, Integer>> buildLeagueBalanceReport() {
     Map<Team, Map<String, Integer>> balanceReport = new LinkedHashMap<>();
 
